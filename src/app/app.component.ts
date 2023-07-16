@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-stapbstap';
+  names: string ="";
+  getName(name: any){
+    console.warn(name)
+    this.names= name;
+  }
 }
