@@ -8,8 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'angular-stapbstap';
   names: string ="";
-  getName(name: any){
-    console.warn(name)
-    this.names= name;
+
+  toChild:string ='This is Parent class'
+
+  count=0;
+  counter(data: any){
+
+    data==='add'? this.count++ : this.count--;
+    // console.warn(this.count++)
+   
   }
 }

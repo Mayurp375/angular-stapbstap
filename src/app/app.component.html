@@ -1,2 +1,7 @@
-<h1 >Hii {{names}}, welcome to {{title}} </h1>
-<input #box type="text" (click)="getName(box.value)" />
+<h1 >Hii {{count}}, welcome to {{title}} </h1>
+
+<button (click)="counter('add')">++</button>
+<button (click)="counter('minus')">--</button>
+
+
+<app-post [parent]='toChild'></app-post>
